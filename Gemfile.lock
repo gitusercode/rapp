@@ -180,7 +180,7 @@ DEPENDENCIES
   web-console (= 2.0.0.beta3)
 
 RUBY VERSION
-   ruby 2.3.0p0
+   ruby 2.3.8p459
 
 BUNDLED WITH
    1.17.1
