@@ -23,7 +23,6 @@
 *.swp
 .env
 /.bundle
-../.idea/*
 /coverage/*
 /db/*.sqlite3
 /log/*
