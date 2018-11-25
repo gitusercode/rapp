@@ -24,7 +24,7 @@ production:
   <<: *default
   adapter: postgresql
   encoding: unicode
-  database: d2gsvpdscb5j0n
+  database: sikvbfmaylojxb
   pool: 5
-  username: qwgxoiuhhohcbj
-  password: 66e27b7d9db04e86223dc019135f7c919d29e804841a00e1edfb7876a8e5e4c6
+  username: sikvbfmaylojxb
+  password: 1a7d2cc9bb81900db98afadd47821253bcccc6b2219f05d44db5f2fe90dbbcb8
