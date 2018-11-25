@@ -5,11 +5,6 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-    @user = User.first
-    respond_to do |format|
-      format.html { redirect_to @user }
-      format.js
-    end
   end
 
   # GET /users/1
