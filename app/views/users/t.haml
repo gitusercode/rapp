@@ -1,0 +1,33 @@
+.table-responsive
+  %table#admin-users.table.table-striped.table-hover
+    %thead
+      %tr
+        %th Name
+        %th.text-center Member Number
+        %th Joined
+        %th.text-center Referred By
+        %th.text-center Provider
+        %th.text-center Featured Member
+        %th.text-center Featured Artist
+        %th.text-center View
+    %tbody.js-clickable-rows
+      - users.each do |user|
+        %tr{data: {href: "#{admin_user_path(user)}"}, class: "#{'incomplete' if !user.completed_profile} #{'success' if (user.songs.any? || user.artworks.any?)}" }
+          %td= user.display_name
+          %td.text-center= user.membership_number || "--"
+          %td= l user.created_at
+          %td.text-center= user.referred_by || "--"
+          %td.text-center
+            - if user.provider == "facebook"
+              %i.fa.fa-facebook
+            - else
+              %i.fa.fa-envelope-o
+          %td.text-center
+            = button_to feature_admin_user_path(user), method: :put, remote: true, class: "btn btn-link btn-feature", form_class: "js-feature-item" do
+              %i.fa.fa-star.feature-star{ class: ("featured" if user.featured_at )}
+          %td.text-center
+            = button_to feature_artist_admin_user_path(user), method: :put, remote: true, class: "btn btn-link btn-feature", form_class: "js-feature-item" do
+              %i.fa.fa-star.feature-star{ class: ("featured" if user.featured_artist_at )}
+          %td.text-center
+            = link_to admin_user_path(user) do
+              %i.fa.fa-search

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="development.sqlite3" uuid="0f3421bd-fa7f-4767-abda-c91bf0acbeb8">
-      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" family="SQLITE" exact-version="3.25.1">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
@@ -11,11 +11,11 @@
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
     <data-source name="Rails rapp: test" uuid="efd9a352-0edb-4656-a36c-bda5e6f9c355">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0.0" />
       <auth-required>false</auth-required>
     </data-source>
     <data-source name="Rails rapp: development" uuid="16d538fa-aa47-4588-a303-0edd6cdb7c31">
-      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" family="SQLITE" exact-version="3.25.1">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
@@ -23,8 +23,13 @@
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
     <data-source name="Rails rapp: production" uuid="d7a5bedd-af56-4c36-9076-3662d69f1338">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0.0" />
       <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Rails rapp: default" uuid="96df133e-c6b8-44a5-80c0-c9db579020ed">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>pevseenkov</user-name>
     </data-source>
   </component>
 </project>

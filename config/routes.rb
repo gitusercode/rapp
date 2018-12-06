@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'static_pages/help'
 
+  post 'users/add'
+
   resources :microposts
 
   resources :users

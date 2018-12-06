@@ -11,6 +11,7 @@ gem 'jbuilder',             '2.2.3'
 gem 'sdoc',                 '0.4.0', group: :doc
 gem 'railties'
 gem 'pg', '0.17.1'
+gem 'pg_search'
 gem 'rails_12factor', '0.0.2'
 
 group :development, :test do

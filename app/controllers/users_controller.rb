@@ -21,6 +21,10 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def add
+    render partial: 'add'
+  end
+
   # POST /users
   # POST /users.json
   def create
